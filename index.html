@@ -43,6 +43,30 @@
 	<span class="dot" onclick="currentSlide(4)"></span>
 	<span class="dot" onclick="currentSlide(5)"></span>
 </div>
+
+<div class="description">
+	Waking<br>
+	Not really glitch art, but an ongoing series involving fractal curves
+	and nature photography.
+</div>
+<div class="description">
+	Detail from Raven Structure<br>
+	A section of a visualization of the poem The Raven by Edgar Allan
+	Poe, made using Gephi.
+</div>
+<div class="description">
+	Dollhouses<br>
+	Photograph, Iceland 2017.
+</div>
+<div class="description">
+	Autumn Tessellates<br>
+	Part one of four of seasonally inspired tessellations.
+</div>
+<div class="description">
+	Trying to Sleep<br>
+	When you've spent all evening working on your math homework and
+	give up in frustration at two in the morning.
+</div>
 </div>
 
 <script>
@@ -60,16 +84,19 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+	var desc = document.getElementsByClassName("description");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
+			desc[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
+	desc[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
