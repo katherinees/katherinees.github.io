@@ -14,5 +14,63 @@
 <br>
 <div class="maincol">
 	<h1>Katherine Does Art Sometimes</h1>
+
+<div class="slideshow-container">
+	<div class="mySlides">
+		<img src="images/opening.jpeg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="images/raven.jpeg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="images/dollhouses.jpeg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="images/autumn.jpeg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="images/sleep.jpeg" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+
+<div style="margin-top:30px; margin-bottom:75px">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </html>
