@@ -63,23 +63,47 @@ h3 {
   transition: background-color 0.6s ease;
 }
 
-.dot:active, .dot:hover {
-	background-color:green;
+.dot:hover {
+	background-color: green;
 }
 
-.prev, .next {
-  cursor: pointer;
+.dot-active {
+  background-color: green;
+}
+
+.arrows {
+	cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: auto;
+  /* top: 22px; */
+  max-width: 800px;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+	/* margin-bottom: 22px; */
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+	/* padding: 20px; */
 }
+
+.arrow-nav {
+	padding-bottom: 40px;
+}
+
+/* .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+} */
 
 /* Position the "next button" to the right */
 .next {
@@ -89,7 +113,7 @@ h3 {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.5);
 }
 
 .slideshow-container {
