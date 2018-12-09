@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>Bechdel Project</title>
+</head>
+<body>
+<div class="topnav">
+	<!-- <a href="index.html">home</a>
+	<a class="active" href="about.html">about</a>
+	<a href="resume.html">resume</a>
+	<a href="nbb.html">blog</a>
+	<a href="links.html">links</a> -->
+</div>
+<br>
+<div>
+
+<div class="maincol">
+  <img src="images/border.png" style="max-width:88px; margin-right:50px" align="left">
+	<h1>Bechdel Project</h1>
+  <p>Northwestern University, EECS349 Machine Learning Final Project</p>
+  <p>Katherine Steiner, Maggie Kidd</p>
+	<h2>Abstract</h2>
+	<p>For our machine learning final project, we're interested in understanding what combinations of movie attributes make movies more or less likely to pass the Bechdel Test. A film passes the Bechdel Test if it:
+    <ol style="padding-left:200px">
+      <li>has at least two named female characters,</li>
+      <li>who speak to each other,</li>
+      <li>about something other than a man.</li>
+    </ol>
+  The test is important because it highlights different trends in the movie industry and brings attention to the fact that not every movie depicts women as multifaceted people. As women in a male-dominated industry, we appreciate visibility and representation in movies and we think it would be interesting to look at how our chosen attributes contribute to the likelihood that a movie will pass the test.</p>
+  <p>Using the <a href='http://bechdeltest.com' target="_blank">Bechdel Test Movie List</a>'s API and the <a href="http://www.omdbapi.com" target="http://www.omdbapi.com">Open Movie Database</a>'s (OMDb) API, and some preprocessing (more details in our report), we were able to get a list of movies which pass or fail the Bechdel Test. We also got each movie's title, year of release, country of origin, short plot description, production company, rating (e.g. PG-13), genre, writers, directors, and IMDb rating (e.g. 8.1/10).</p>
+  <p>Generally speaking, we expect that a movie that is "similar" to a movie which passes the Bechdel Test will also pass the test, and vice versa. We partitioned our data set, 70% for training and 30% for testing, and used Weka ML package to explore different algorithms. The algorithm that resulted in the best accuracy percentage was KStar, which correctly classified movies as passing or failing the Bechdel Test 73% of the time.</p>
+  <h2>Links</h2>
+  <p>Contact <a href="mailto:katherinesteiner2019@u.northwestern.edu" target ="_top">Katherine</a> or <a href="mailto:margaretkidd2019@u.northwestern.edu" target ="_top">Maggie</a> by email.</p>
+  <p>Download our full report.</p>
+  <p>Download our data set.</p>
+</div>
+</div>
+<div class="footer">
+	<!-- <p>&copy 2018 Sometimes Katherine - Built by Katherine Steiner</p> -->
+</div>
+</body>
+</html>
