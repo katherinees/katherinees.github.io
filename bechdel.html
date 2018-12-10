@@ -17,7 +17,7 @@
 <div>
 
 <div class="maincol">
-  <img src="images/border.png" style="max-width:88px; margin-right:50px" align="left">
+  <img src="images/border.png" style="max-width:90px; margin-right:50px" align="left">
 	<h1>Bechdel Project</h1>
   <p>Northwestern University, EECS349 Machine Learning Final Project</p>
   <p>Katherine Steiner, Maggie Kidd</p>
@@ -30,11 +30,13 @@
     </ol>
   The test is important because it highlights different trends in the movie industry and brings attention to the fact that not every movie depicts women as multifaceted people. As women in a male-dominated industry, we appreciate visibility and representation in movies and we think it would be interesting to look at how our chosen attributes contribute to the likelihood that a movie will pass the test.</p>
   <p>Using the <a href='http://bechdeltest.com' target="_blank">Bechdel Test Movie List</a>'s API and the <a href="http://www.omdbapi.com" target="http://www.omdbapi.com">Open Movie Database</a>'s (OMDb) API, and some preprocessing (more details in our report), we were able to get a list of movies which pass or fail the Bechdel Test. We also got each movie's title, year of release, country of origin, short plot description, production company, rating (e.g. PG-13), genre, writers, directors, and IMDb rating (e.g. 8.1/10).</p>
-  <p>Generally speaking, we expect that a movie that is "similar" to a movie which passes the Bechdel Test will also pass the test, and vice versa. We partitioned our data set, 70% for training and 30% for testing, and used Weka ML package to explore different algorithms. The algorithm that resulted in the best accuracy percentage was KStar, which correctly classified movies as passing or failing the Bechdel Test 73% of the time.</p>
+  <p>Generally speaking, we expect that a movie that is "similar" to a movie which passes the Bechdel Test will also pass the test, and vice versa. We partitioned our data set, 70% for training and 30% for testing, and used Weka ML package to explore different algorithms. The algorithm that resulted in the best accuracy percentage was KStar, which correctly classified movies as passing or failing the Bechdel Test 75% of the time. One particularly interesting attribute was the gender of the director. In the training set, 88% of films with a female director passed the Bechdel Test while only about 50% of films with a male director pass.</p>
+  <img src="images/dir_graph.png" style="max-width:400px">
+  <p>In the graph above, red represents instances that pass the test and blue are examples that did not. More graphs can be found in our full report.</p>
   <h2>Links</h2>
   <p>Contact <a href="mailto:katherinesteiner2019@u.northwestern.edu" target ="_top">Katherine</a> or <a href="mailto:margaretkidd2019@u.northwestern.edu" target ="_top">Maggie</a> by email.</p>
-  <p>Download our full report.</p>
-  <p>Download our data set.</p>
+  <p>Download our full <a href="attachments/final_report.pdf" target="_blank">report</a>.</p>
+  <p>Download our <a href="attachments/train.csv" target="_blank">training</a> and <a href="attachments/test.csv" target="_blank">testing</a> datasets.</p>
 </div>
 </div>
 <div class="footer">
