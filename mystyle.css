@@ -44,6 +44,28 @@ h3 {
 	padding-top:20px;
 }
 
+.archive-options {
+	float:left;
+	margin-right: 75px;
+	text-align:left;
+	/* margin-bottom: 20px; */
+}
+
+.archive-options a {
+	float:left;
+	color:gray;
+	padding-right:20px;
+	text-decoration:none;
+}
+
+.archive-options a:hover {
+	color:green;
+}
+
+.archive-options a.active {
+	color:green;
+}
+
 .blognav a {
 	float:left;
 	color:gray;
@@ -128,4 +150,8 @@ h3 {
 .slideshow-container {
   max-width: 750px;
   position: relative;
+}
+
+.mode-hidden {
+	display:none;
 }
