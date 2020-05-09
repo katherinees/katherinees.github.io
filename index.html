@@ -34,7 +34,7 @@
 </div>
 <div class="slideshow-container">
 	<div class="mySlides">
-		<img src="images/opening.jpeg" style="width:100%">
+		<img src="images/waking.jpeg" style="width:100%">
 	</div>
 	<div class="mySlides">
 		<img src="images/diana_on_canvas.jpg" style="width:100%">
@@ -43,7 +43,13 @@
 		<img src="images/kath_block_print.JPG" style="width:100%">
 	</div>
 	<div class="mySlides">
-		<img src="images/dollhouses.jpeg" style="width:100%">
+		<img src="images/look-closer-1.JPG" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="images/nine-people-listening.jpeg" style="width:100%">
+	</div>
+	<div class="mySlides">
+		<img src="images/AD3.JPG" style="width:100%">
 	</div>
 	<div class="mySlides">
 		<img src="images/hexagons.jpeg" style="width:100%">
@@ -57,12 +63,8 @@
 	<div class="mySlides">
 		<img src="images/cryptomouth.jpeg" style="width:100%">
 	</div>
-	<div class="mySlides">
-		<img src="images/raven.jpeg" style="width:100%">
-	</div>
-	<div class="mySlides">
-		<img src="images/sleep.jpeg" style="width:100%">
-	</div>
+
+
 	<div class="mySlides">
 		<img src="images/octopus.jpeg" style="width:100%">
 	</div>
@@ -80,20 +82,56 @@
 	<img src="images/forgetting.jpg" style="width:75%">
 	<h4>Forgetting <div style="color:gray">2018</div></h4>
 </div>
+
 <div class="description">
 	<h2>Diana <div style="color:gray">2019</div></h2>
-	<p>Oil on canvas. Inspired by Anna Hyatt Huntington's 1922 scupture "Diana of the Chase," Giorgio de Chirico's 1927 "The Eventuality of Destiny," and Ren&eacute; Magritte's 1958 "The Banquet."<p>
+	<p>Oil on canvas. Inspired by Anna Hyatt Huntington's 1922 scupture "Diana of the Chase," Giorgio de Chirico's 1927 "The Eventuality of Destiny," and Ren&eacute; Magritte's 1958 "The Banquet."<p><br>
+		<img src="images/Aphrodite.JPG" style="width:75%">
+		<h4>Aphrodite <div style="color:gray">2020</div></h4>
+		<p>Digital painting. Inspired by the Lely Venus.</p>
 </div>
 <div class="description">
 	<h2>Untitled block print (self portrait in blue) <div style="color:gray">2020</div></h2>
 	<p>My first try at block printing! Edition of five.<p><br>
 	<img src="images/kath_magnolias.JPG" style="width:75%">
 	<h4>Self Portrait <div style="color:gray">2019</div></h4>
+	<p>Oil on canvas.</p>
 </div>
 <div class="description">
-	<h2>Dollhouses <div style="color:gray">2017</div></h2>
-	<p>Photograph, Iceland</p>
+	<h2>Look Closer <div style="color:gray">2019</div></h2>
+	<p>A five part photo series involving 10 negatives, a 1970s Olympus OM-1, several pieces of cardboard, one zacto knife, and many hours spent stenciling and selectively exposing parts of photosensitive paper in a darkroom to collage two images onto a single sheet. 7" x 7" each, mounted on board.</p><br>
+	<img src="images/look-closer-2.JPG" style="width:75%"><br><br>
+	<img src="images/look-closer-3.JPG" style="width:75%"><br><br>
+	<img src="images/look-closer-4.JPG" style="width:75%"><br><br>
+	<img src="images/look-closer-5.JPG" style="width:75%"><br><br>
+	<img src="images/look-closer-installation.JPG" style="width:75%">
 </div>
+
+<div class="description">
+	<h2>Nine people listening to F&uuml;r Elise by Ludwig van Beethoven <div style="color:gray">2020</div></h2>
+	<p>This work was created for submission to the Design Museum of Chicago's All Together Now - Sound x Design exhibition. The following is the artist's statement submitted along with the piece. </p>
+	<p>How do you represent music, without ever playing a note? Listening to music can be a profoundly personal experience&mdash;a song might hold a different meaning to everyone who hears it. When I hear F&uuml;r Elise, I remember slow summer days in front of my shiny black piano in my childhood home. In this project, I wanted to explore how I could express a piece of music in a visual format instead of an auditory one, in both a objective and subjective way. <i>Nine people listening to F&uuml;r Elise by Ludwig van Beethoven</i> draws from both the literal notes and personal interpretations of the song.</p>
+
+	<p>I chose F&uuml;r Elise in particular because it's so widely recognized and I was interested in seeing how its structure with repeating phrases could be abstracted. I first numbered a piano keyboard from 1 to 88 and then converted the piano sheet music for F&uuml;r Elise into numbers (that famous opening couple of measures is 56-55-56-55-56-51-53-52-49, all played by the right hand). I wrote a Python script to count up how many times a pair of keys were played consecutively by the same hand (e.g. how many times the left hand played A2 followed by an E3). This data was then put into Gephi, an open source data visualization software to create a graph representing the musical structure of the piece. The 88 nodes (the circles) of the graph represent the keys, white or black like they are on the keyboard. Edges connecting nodes represent when two keys are played one after another, red for when they're played by the right hand and blue for the left, with the thickness of the edge proportional to the number of times the key pair is repeated. The size of each node is proportional to the number of other nodes connected to it and thinner edges are rendered on top of thicker ones. </p>
+
+	<p>On some level I like that the graphs look almost random. I think it's interesting to look at even if you don't know what's happening there. But here's a piece of the song you can concretely pinpoint in all that craziness: in each graph, there's a pair of blue edges on top of the two thickest red edges, going between a white node and a black node in a loop. (In the graph in the top right corner, the loop about spans the width of the graph, the white node is a third of the way up from the bottom on the left and the black node is furthest one to the bottom right, it's like a football shape.) These edges correspond to the E-D#-E-D#-E (56-55-56-55-56) of that repeated melody, which is mostly but not always played by the right hand.</p>
+
+	<p>When a piece of music is played, anyone who hears it hears the same notes&mdash;every graph contains the same node and edge data. But each listener interacts with the music in their own unique way&mdash;the layout of the graph can be manipulated and still convey the same information. I called up nine friends and played them a recording of the song while rearranging the placement of the nodes of the graph, asking them to stop me and direct me in final tweaks once what they saw in the graph&mdash;the arrangement, the balance or lack thereof of the composition&mdash;matched how they felt about the music. From left to right, top to bottom, these graphs represent the following people listening to F&uuml;r Elise: Nikil R., Sam F., Charlotte M., Madeleine P., Luis V., Joseph K., Natasha B., Joe K., and Victor S. If nothing else, then working on this piece was a good excuse to catch up with some friends while in quarantine. </p>
+
+	<p>Bringing together the nine graphs brings together nine listeners and invites the viewer to reflect on how they might visualize the music differently. Even as our interpretations of a song may differ, we can enjoy listening together. Which of these&mdash;if any&mdash;speak to you? Do you see the fluidity of the left hand arpeggios in smoothly curving lines? Do you see lightness and playfulness in overlapping diagonals? Do you see the sudden urgency of the second to last section of the song in busy clusters of color? How might your version of F&uuml;r Elise look? </p>
+</div>
+
+<div class="description">
+	<h2>Architecture Dreaming (AD3) <div style="color:gray">2020</div></h2>
+	<p>Digital drawing, Procreate on iPad Pro.</p><br>
+	<img src="images/AD1.JPG" style="width:75%">
+	<h4>AD1 <div style="color:gray">2020</div></h4>
+	<img src="images/AD2.JPG" style="width:75%">
+	<h4>AD2 <div style="color:gray">2020</div></h4>
+	<img src="images/AD4.JPG" style="width:75%">
+	<h4>AD4 <div style="color:gray">2020</div></h4>
+</div>
+
 <div class="description">
 	<h2>This Is A Tiling Composed Of Twenty-Two Colored Six-Sided Polygons <div style="color:gray">2016</div></h2>
 	<p>Computer screens use RGB color space to display colors as some combination of red, green, and blue; in base 10 (decimal) the amount of each color ranges from 0 to 255, and in base 16 (hexadecimal) this same range is expressed as 0 to FF. You can reference a particular color by its hexadecimal code - #000000 is pure black, #FFFFFF is pure white, #FF0000 is red, #00FF00 is green, #0000FF is blue.</p>
@@ -128,16 +166,8 @@
 	<p>Choose a keyphrase, delete all spaces and repeating letters. So for example, the key "Katherine Does Art Sometimes" becomes "katherindosm." To create the cipher aphabet, have the first letter of the keyphrase match to A, the second to B, and so on. Once you've finished with all the letters in the keyphrase, continue with the rest of the alphabet, starting with the next letter after the last letter of the key, and then wrapping around to the beginning of the alphabet. We don't want any letter to be coded to itself, so we shift the enciphered alphabet (if necessary) until there are no such repetitions.</p>
 	<p>This monoalphabetic substitution cipher, an improvement on the Caesar cipher, was in use throughout the first millennium CE, but was eventually broken by Arabic cryptanalysists using frequency analysis at least as early as the ninth century. I wrote Matlab functions for encryption and decryption using the cipher (and when I have any free time ever I'll make better python versions and put it in my github because right now the Matlab versions are annoyingly inelegant).</p>
 </div>
-<div class="description">
-	<h2>Detail from Raven Structure <div style="color:gray">2014</div></h2>
-	<p>A section of a visualization of the poem The Raven by Edgar Allan Poe, made using Gephi.</p>
-	<p>Part of my junior year high school art independent project. I used an open source data visualization program to look at the structure of the first few stanzas one of my favorite poems. Each unique word became a node in the graph, with the size of the node proportional to the frequency of the word in the poem. Edges connect consecutive words, with heavier lines showing where two words appear next to each other multiple times.</p>
-</div>
-<div class="description">
-	<h2>Trying to Sleep <div style="color:gray">2016</div></h2>
-	<p>When you've spent all evening working on your math homework and
-	give up in frustration at two in the morning.</p>
-</div>
+
+
 <div class="description">
 	<h2>Scratchboard <div style="color:gray">2013</div></h2>
 	<p>Black India ink over white clay, taken off with x-acto knife.</p>
