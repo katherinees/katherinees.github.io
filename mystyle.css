@@ -155,3 +155,8 @@ h3 {
 .mode-hidden {
 	display:none;
 }
+
+.archive-category {
+	padding-top: 40px;
+	padding-bottom: -20px;
+}
