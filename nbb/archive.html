@@ -17,14 +17,15 @@
 <div class="maincol">
 	<h1>Never Be Bored Archive</h1>
 	<div class="archive-options">
-		<a id="post" onclick="showPost()" class="active">by post</a>
-		<a id="category" onclick="showCategory()">by category</a>
+		<a class="btn active" onclick="showPost()">by post</a>
+		<a class="btn" onclick="showCategory()">by category</a>
+		<a class="btn" onclick="showMap()">map</a>
 	</div>
 
 	<!-- Replace these: ’ “ ” —
 	I think the total count = find < b r > and then subtract 2?-->
 	<br>
-	<div id="byPost">
+	<div class="archive-container" id="byPost">
 		<p><a href="aye-aye-captain.html">XXXVIII. Aye aye, captain</a> <i>Our Flag Means Death</i>, tv show. <i>Black Sails</i>, tv show; <i>Avenue Five</i> tv show; <i>The Princess Bride</i> book by William Goldman and 1987 Rob Reiner movie.</p>
 
 		<p><a href="and-poems-exist-poems-days-death.html">XXXVII. and poems exist; poems, days, death</a> <i>The Only Harmless Great Thing</i> by Brooke Bolander. <i>Alphabet</i> by Inger Christensen, translated by Susanna Nied; <i>The Windup Girl</i> by Paolo Bacigalupi; art by Evan M Cohen.</p>
@@ -101,7 +102,7 @@
 
 		<p><a href="really-big-worms.html">I. Really Big Worms</a> <i>Dune</i> by Frank Herbert, science fiction novel. <i>Ender's Game</i> by Orson Scott Card; <i>Too Like the Lightning</i> by Ada Palmer; <i>Drive</i> by Dave Kellett.&nbsp;</p>
 	</div>
-	<div id="byCategory" style="display:none;">
+	<div id="byCategory" class = "archive-container" style="display:none;">
 		<h2>Jump to category</h2>
 		<p>
 		<a href='#Art'>Art</a><br>
@@ -382,6 +383,13 @@
 		Worm by Wildbow</p>
 
 	</div>
+
+	<div id="mapImg" class="archive-container" style="display:none;">
+		<br><br>
+		<img src="../images/archive-map-labeled.png" style="width:100%">
+		<br>
+		<img src="../images/archive-map-unlabeled.png" style="width:100%">
+	</div>
 	<hr>
 
 	<p style="color:gray; font-size:16px">Never Be Bored is a recommendation blog documenting my journey through my never-ending queue. For each thing I like, I'm recommending things to go with it based on similar themes&mdash;not just books for book posts or movies for movie posts, but music and comics too, things you might not see otherwise.</p>
@@ -391,16 +399,15 @@
 </div>
 </body>
 <script>
+
 function showCategory() {
   var x = document.getElementById("byCategory");
   if (x.style.display === "none") {
     x.style.display = "block";
-		var p = document.getElementById("post");
-		p.classList.toggle("active");
-		var c = document.getElementById("category");
-		c.classList.toggle("active");
 		var y = document.getElementById("byPost");
 		y.style.display = "none";
+		var m = document.getElementById("mapImg");
+		m.style.display = "none";
   }
 }
 
@@ -408,13 +415,32 @@ function showPost() {
   var x = document.getElementById("byPost");
   if (x.style.display === "none") {
     x.style.display = "block";
-		var p = document.getElementById("category");
-		p.classList.toggle("active");
-		var c = document.getElementById("post");
-		c.classList.toggle("active");
-		var y = document.getElementById("byCategory");
-		y.style.display = "none";
+		var c = document.getElementById("byCategory");
+		c.style.display = "none";
+		var m = document.getElementById("mapImg");
+		m.style.display = "none";
   }
 }
+
+function showMap() {
+	var x = document.getElementById("mapImg");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+		var c = document.getElementById("byCategory");
+		c.style.display = "none";
+		var y = document.getElementById("byPost");
+		y.style.display = "none";
+	}
+}
+
+var btns = document.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
 </script>
 </html>

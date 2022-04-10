@@ -66,6 +66,10 @@ h3 {
 	color:green;
 }
 
+.archive-container {
+	/*color:red; */
+}
+
 .blognav a {
 	float:left;
 	color:gray;

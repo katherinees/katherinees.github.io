@@ -46,7 +46,7 @@
 		<img src="images/look-closer-1.JPG" style="width:100%">
 	</div>
 	<div class="mySlides">
-		<img src="images/nine-people-listening.jpeg" style="width:100%">
+		<img src="images/nine-people-listening.jpg" style="width:100%">
 	</div>
 	<div class="mySlides">
 		<img src="images/AD3.JPG" style="width:100%">
@@ -109,7 +109,7 @@
 
 <div class="description">
 	<h2>Nine people listening to F&uuml;r Elise by Ludwig van Beethoven <div style="color:gray">2020</div></h2>
-	<p>This work was created for submission to the Design Museum of Chicago's All Together Now - Sound x Design exhibition. The following is the artist's statement submitted along with the piece. </p>
+	<p>This work was created for submission to the Design Museum of Chicago's All Together Now - Sound x Design exhibition, and was selected by blind jury to be included in the show, on display from 13 November 2021 to 3 April 2022. The following is the artist's statement submitted along with the piece. </p>
 	<p>How do you represent music, without ever playing a note? Listening to music can be a profoundly personal experience&mdash;a song might hold a different meaning to everyone who hears it. When I hear F&uuml;r Elise, I remember slow summer days in front of my shiny black piano in my childhood home. In this project, I wanted to explore how I could express a piece of music in a visual format instead of an auditory one, in both a objective and subjective way. <i>Nine people listening to F&uuml;r Elise by Ludwig van Beethoven</i> draws from both the literal notes and personal interpretations of the song.</p>
 
 	<p>I chose F&uuml;r Elise in particular because it's so widely recognized and I was interested in seeing how its structure with repeating phrases could be abstracted. I first numbered a piano keyboard from 1 to 88 and then converted the piano sheet music for F&uuml;r Elise into numbers (that famous opening couple of measures is 56-55-56-55-56-51-53-52-49, all played by the right hand). I wrote a Python script to count up how many times a pair of keys were played consecutively by the same hand (e.g. how many times the left hand played A2 followed by an E3). This data was then put into Gephi, an open source data visualization software to create a graph representing the musical structure of the piece. The 88 nodes (the circles) of the graph represent the keys, white or black like they are on the keyboard. Edges connecting nodes represent when two keys are played one after another, red for when they're played by the right hand and blue for the left, with the thickness of the edge proportional to the number of times the key pair is repeated. The size of each node is proportional to the number of other nodes connected to it and thinner edges are rendered on top of thicker ones. </p>
