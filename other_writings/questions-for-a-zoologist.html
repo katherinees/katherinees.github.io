@@ -1,0 +1,49 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="../mystyle.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+<title>Sometimes Katherine - blog</title>
+</head>
+<body>
+<div class="topnav">
+	<a href="../index.html">home</a>
+	<a href="../about.html">about</a>
+	<a href="../resume.html">resume</a>
+  <a href="../nbb.html">blog</a>
+	<a href="../links.html">links</a>
+</div>
+<br>
+<div class="maincol">
+	<h1>Questions I Wish I Could Ask a Zoologist</h1>
+  <p>3 August 2022</p>
+  <p>From me, an applied mathematician, who unfortunately doesn't know any zoologists.</p>
+  <h2>1. Intro</h2>
+  <p><b>1.1</b> So this all came about because I watched Prehistoric Planet and got emotional about dinosaurs. And then I watched Crash Course Zoology and that answered some questions but not all. And maybe there are other ways I could get answers to these questions but I don't know of them. And also I visited a friend in Atlanta a few weeks ago, who was my saving grace all through college, and it was super fun to try and guess what the answers to a few of these questions might be. All this to say, it's about the journey not the destination.</p>
+  <p><b>1.2</b> Not gonna lie part of the reason I'm writing this is just an excuse to try out displaying pretty pretty math equations. Anyway two main applied math concepts come to mind. First we have the logistic equation, \[\frac{dP}{dt} = kP(N-P), P(0) = P_0\] which can be solved analytically \[P(t) = \frac{N}{(\frac{N-P_0}{P_0})e^{-kNt}+1}\] where \(P(t)\) is population as a function of time, \(N\) is the carrying capacity of the population, \(k\) is a constant, \(P_0\) is the initial population at \(t=0\). The important bit here is that there's some upper bound \(N\) for population. Naturally, the population tends towards this number.</p>
+  <p><b>1.3</b> The other interesting system is the predator-prey equations, the Lotka-Volterra equations: \[\frac{dx}{dt} = \alpha x - \beta xy,\]\[\frac{dy}{dt} = \delta xy - \gamma y,\] where \(x(t)\) is the population of the prey species over time, \(y(t)\) is the population of the predator species over time, and \(\alpha, \beta, \delta, \gamma\) are constants. Solving these equations gives periodic solutions. When \(x\) increases, \(y\) increases; when \(y\) increases, \(x\) decreases; when \(x\) decreases, \(y\) decreases; when \(y\) decreases, \(x\) increases. And so on.</p>
+	<p><b>1.4</b> The point is: environmental pressures will have an impact on animal population, physical traits, behavioral traits. And maybe (?) there is math to describe these kinds of relationships. Maybe this can help us understand things about animals which are difficult to study, because they are small, or rare, or hard to find, or extinct. That would be cool I think.</p>
+  <h2>2. Population dynamics</h2>
+  <p><b>2.1</b> There's a bunch of inherent assumptions in the Lotka-Volterra predator-prey equations. For example, that the prey species population is solely dependant on the predator population and vice versa. Are there any examples of this in nature? Which two species are the <i>most</i> interdependent? I don't necessarily mean mutually beneficial symbiotic relationship. Is there a pair of species out there that are super sensitive to perturbations in the other's population? And insensitive to changes in population in other plant/animal species in the ecosystem? Maybe an animal which only eats one kind of plant, and the plant is only eaten by that kind of animal? </p>
+  <p><b>2.2</b> What is the ideal community size, for animals that exist in communities? Too small and there could be problems with finding enough genetically diverse mates probably. Too big and it's too big a strain on resources. Very big and it probably becomes necessary to specialize? To make the most of limited resources to support a large population, but specialization is probably not ideal for smaller communities, because it would be sensitive to one/a few deaths in the population.</p>
+  <p><b>2.2.1</b> Could there be some relationship between a species relative success at leveraging resources, ecological footprint, environmental bounty/competition presence, and natural community size? Say \[C ~\sim \frac{Re}{Fc}\] where \(C\) is the community size, \(R\) is the species' ability to take resources, \(e\) is the relative bounty of the environment, \(F\) is the species' footprint/impact on environment when they take resources, \(c\) is presence of other species competing for same resources/predators.</p>
+  <p><b>2.2.2</b> So for example, pride size in lions. Lions are good at hunting (?) so high \(R\). But the cost of hunting is fewer zebras or whatever, so also high \(F\). Savannas are not super bountiful from the perspective of the lions (it's not like they can eat the grass), so low \(e\). But there's not a ton of other predators who are competing for the same zebras or whatever, so low \(c\).</p>
+  <p><b>2.2.3</b> If, in a pride of lions, there's a few who are exceptionally good hunters, and can provide more prey for the pride, then \(R\) increases, \(C\) increases. If there happens to be a ton of zebras around, \(e\) increases and \(F\) decreases, so \(C\) increases. If there's a disease in the zebra population, effectively competing with the lions to kill off zebra, \(c\) increases, \(C\) decreases.</p>
+  <p><b>2.2.4</b> In comparison, maybe ant colonies have a lower \(F\) and higher \(e\) than lions. \(R\) is probably pretty high, as is \(c\). And so it works out that \(C_{\text{ant}} > C_{\text{lion}}\)? Maybe?</p>
+  <h2>3. Physical limitations</h2>
+  <p><b>3.1</b> Galileo's Square-Cube law describes upper bounds on animal size.</p>
+  <h2>4. Behavioral limitations</h2>
+  <p><b>4.1</b> Some animals travel a lot in the course of a day. And some do not.</p>
+	<hr>
+
+
+
+</div>
+<div class="footer">
+	<p>&copy 2018-2022 Sometimes Katherine - Built by Katherine Steiner</p>
+</div>
+</body>
+</html>
