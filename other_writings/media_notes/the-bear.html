@@ -103,7 +103,8 @@ ebra reading out the article word by word, pride of the kitchen, carmy and richi
 <br><br>
 sydney bb :( this is not you :(
 <br><br><hr><br>
-EP 8
+<button>EP 8</button>
+<div class="content">
 <br><br>
 we still don't know why michael never let him work with him?
 <br><br>
@@ -114,15 +115,46 @@ sydney & marcus's relationship is too cute omg
 michael says: keep it simple, stupid
 <br><br>
 kbl?? OH MOTHERFUCKER
+</div>
 
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>in section 3 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
 
 <br><br>
 <hr>
 
+<button class='ep_button'><span class='exp_seg'>&#9660;</span><span class='col_seg'>&#9651;</span> EP 1</button>
+
+<button class='ep_button'><span class='exp_seg'>&#9660;</span><span class='col_seg'>&#9651;</span> EP 2</button>
 
 </div>
 <div class="footer">
 	<p>&copy 2018-2022 Sometimes Katherine - Built by Katherine Steiner</p>
 </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+var eb = document.getElementsByClassName("ep_button")
+for (var j = 0; j < eb.length; j++) {
+	eb[j].addEventListener("click", function() {
+		this.classList.toggle("active");
+	})
+}
+</script>
 </body>
 </html>
